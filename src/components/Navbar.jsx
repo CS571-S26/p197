@@ -10,7 +10,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-brand">
-          <img src="/p197/logo.png" alt="Novedades angel y Chuy" className="brand-logo" />
+          <img src="/p197/logo.jpg" alt="Novedades angel y Chuy" className="brand-logo" />
           <h1>Novedades angel y Chuy</h1>
         </Link>
 
