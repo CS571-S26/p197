@@ -1,14 +1,29 @@
+import { Routes, Route } from 'react-router-dom';
+import './App.css';
+import { StoreProvider } from './context/StoreContext';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import HomePage from './pages/HomePage';
+import ProductsPage from './pages/ProductsPage';
+import CartPage from './pages/CartPage';
+import NotFound from './pages/NotFound';
+
 function App() {
   return (
-    <div style={{ padding: '20px', background: 'lightblue', minHeight: '100vh' }}>
-      <h1>Novedades angel y Chuy Store</h1>
-      <p>Basic React is working! The issue is with routing or context.</p>
-      <nav style={{ margin: '20px 0' }}>
-        <a href="/" style={{ marginRight: '20px' }}>Home</a>
-        <a href="/products" style={{ marginRight: '20px' }}>Products</a>
-        <a href="/cart">Cart</a>
-      </nav>
-    </div>
+    <StoreProvider>
+      <div className="app">
+        <Navbar />
+        <main className="app-main">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/products" element={<ProductsPage />} />
+            <Route path="/cart" element={<CartPage />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </StoreProvider>
   );
 }
 
