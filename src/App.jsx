@@ -11,7 +11,7 @@ import NotFound from './pages/NotFound';
 function App() {
   return (
     <StoreProvider>
-      <Router>
+      <Router basename="/p197">
         <div className="app">
           <Navbar />
           <main className="app-main">
