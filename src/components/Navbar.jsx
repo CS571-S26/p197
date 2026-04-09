@@ -12,10 +12,10 @@ export default function Navbar() {
         <Link to="/" className="navbar-brand">
           <img
             src={`${import.meta.env.BASE_URL}logo.jpg`}
-            alt="Novedades angel y Chuy"
+            alt="Novedades Angel y Chuy"
             className="brand-logo"
           />
-          <h1>Novedades angel y Chuy</h1>
+          <h1>Novedades Angel y Chuy</h1>
         </Link>
 
         <ul className="navbar-menu">

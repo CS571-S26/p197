@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-section">
-          <h3>About Novedades angel y Chuy</h3>
+          <h3>About Novedades Angel y Chuy</h3>
           <p>
             We offer the finest selection of jewelry, bags, and perfumes for every occasion. Quality and elegance are our promise.
           </p>
@@ -42,7 +42,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; {currentYear} Novedades angel y Chuy. All rights reserved.</p>
+        <p>&copy; {currentYear} Novedades Angel y Chuy. All rights reserved.</p>
         <div className="social-links">
           <a href="#facebook">f</a>
           <a href="#instagram">📷</a>

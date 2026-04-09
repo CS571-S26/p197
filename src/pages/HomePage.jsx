@@ -39,7 +39,7 @@ export default function HomePage() {
 
       {/* Why Us Section */}
       <section className="why-us">
-        <h2>Why Choose Novedades angel y Chuy?</h2>
+        <h2>Why Choose Novedades Angel y Chuy?</h2>
         <div className="benefits-grid">
           <div className="benefit">
             <span className="benefit-icon">✨</span>

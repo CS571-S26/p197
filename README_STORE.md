@@ -1,4 +1,4 @@
-# Novedades angel y Chuy - Frontend Only
+# Novedades Angel y Chuy - Frontend Only
 
 A modern, responsive e-commerce website for jewelry, bags, and perfumes built with React and Vite.
 

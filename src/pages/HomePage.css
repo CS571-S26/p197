@@ -3,8 +3,9 @@
 }
 
 .hero {
-  background: linear-gradient(135deg, var(--accent) 0%, #8b2fd4 100%);
-  color: white;
+  background: linear-gradient(135deg, rgba(228, 198, 113, 0.95) 0%, rgba(178, 132, 67, 0.95) 100%);
+  background-image: radial-gradient(circle at top left, rgba(255, 244, 209, 0.35), transparent 30%), radial-gradient(circle at bottom right, rgba(178, 132, 67, 0.25), transparent 35%), linear-gradient(135deg, rgba(228, 198, 113, 0.95) 0%, rgba(178, 132, 67, 0.95) 100%);
+  color: var(--text-h);
   padding: 6rem 2rem;
   text-align: center;
   min-height: 500px;
@@ -16,21 +17,21 @@
 .hero-content h1 {
   font-size: 3rem;
   margin: 0 0 1rem 0;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 .hero-content p {
   font-size: 1.3rem;
   margin: 0 0 2rem 0;
-  opacity: 0.95;
+  color: rgba(255, 247, 223, 0.95);
 }
 
 .hero-btn {
   padding: 1rem 2.5rem;
   font-size: 1.1rem;
-  background: white;
+  background: rgba(255, 255, 255, 0.95);
   color: var(--accent);
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 8px;
   cursor: pointer;
   font-weight: 700;
@@ -39,14 +40,14 @@
 
 .hero-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+  background: rgba(255, 255, 255, 1);
 }
 
 .featured,
 .why-us,
 .testimonials {
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
   padding: 4rem 2rem;
 }
 
@@ -82,7 +83,7 @@
 
 .benefit:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(170, 59, 255, 0.2);
+  box-shadow: 0 10px 25px rgba(228, 198, 113, 0.25);
 }
 
 .benefit-icon {

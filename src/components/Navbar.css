@@ -8,8 +8,7 @@
 }
 
 .navbar-container {
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -38,7 +37,7 @@
 .navbar-brand h1 {
   margin: 0;
   font-size: 1.5rem;
-  color: var(--text-h);
+  color: var(--accent);
 }
 
 .navbar-menu {
