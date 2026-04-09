@@ -6,12 +6,12 @@ import './ProductsPage.css';
 
 export default function ProductsPage() {
   const { addToCart, wishlist, toggleWishlist } = useStore();
-  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [selectedCategory, setSelectedCategory] = useState('todas');
   const [sortBy, setSortBy] = useState('name');
 
   let filteredProducts = PRODUCTS;
 
-  if (selectedCategory !== 'all') {
+  if (selectedCategory !== 'todas') {
     filteredProducts = filteredProducts.filter((p) => p.category === selectedCategory);
   }
 
@@ -28,15 +28,15 @@ export default function ProductsPage() {
   return (
     <div className="products-page">
       <div className="products-header">
-        <h1>Our Collection</h1>
-        <p>Discover luxury items for every occasion</p>
+        <h1>Nuestra Colección</h1>
+        <p>Descubre artículos de lujo para cada ocasión</p>
       </div>
 
       <div className="products-container">
         {/* Sidebar */}
         <aside className="sidebar">
           <div className="filter-group">
-            <h3>Category</h3>
+            <h3>Categoría</h3>
             <div className="category-filter">
               {CATEGORIES.map((cat) => (
                 <button
@@ -51,16 +51,16 @@ export default function ProductsPage() {
           </div>
 
           <div className="filter-group">
-            <h3>Sort By</h3>
+            <h3>Ordenar por</h3>
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
               className="sort-select"
             >
-              <option value="name">Name (A-Z)</option>
-              <option value="price-low">Price (Low to High)</option>
-              <option value="price-high">Price (High to Low)</option>
-              <option value="rating">Rating (High to Low)</option>
+              <option value="name">Nombre (A-Z)</option>
+              <option value="price-low">Precio (Menor a Mayor)</option>
+              <option value="price-high">Precio (Mayor a Menor)</option>
+              <option value="rating">Valoración (Mayor a Menor)</option>
             </select>
           </div>
         </aside>
@@ -68,7 +68,7 @@ export default function ProductsPage() {
         {/* Products Grid */}
         <main className="products-main">
           <div className="products-info">
-            <p>{filteredProducts.length} products found</p>
+            <p>{filteredProducts.length} productos encontrados</p>
           </div>
 
           <div className="products-grid">
@@ -85,7 +85,7 @@ export default function ProductsPage() {
 
           {filteredProducts.length === 0 && (
             <div className="no-products">
-              <p>No products found in this category.</p>
+              <p>No se encontraron productos en esta categoría.</p>
             </div>
           )}
         </main>

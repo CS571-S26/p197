@@ -8,7 +8,7 @@ export default function ProductCard({ product, onAddToCart, isWishlisted, onTogg
         <button
           className={`wishlist-btn ${isWishlisted ? 'active' : ''}`}
           onClick={() => onToggleWishlist(product.id)}
-          title={isWishlisted ? 'Remove from wishlist' : 'Add to wishlist'}
+          title={isWishlisted ? 'Eliminar de favoritos' : 'Agregar a favoritos'}
         >
           {isWishlisted ? '❤️' : '🤍'}
         </button>
@@ -28,7 +28,7 @@ export default function ProductCard({ product, onAddToCart, isWishlisted, onTogg
         <div className="product-footer">
           <span className="product-price">${product.price.toFixed(2)}</span>
           <button className="add-to-cart-btn" onClick={() => onAddToCart(product)}>
-            Add to Cart
+            Agregar al carrito
           </button>
         </div>
       </div>

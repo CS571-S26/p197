@@ -12,15 +12,15 @@ export default function CartPage() {
   return (
     <div className="cart-page">
       <div className="cart-container">
-        <h1>Shopping Cart</h1>
+        <h1>Carrito de Compras</h1>
 
         {cart.length === 0 ? (
           <div className="empty-cart">
             <p className="empty-icon">🛍️</p>
-            <h2>Your cart is empty</h2>
-            <p>Start shopping to add items to your cart!</p>
+            <h2>Tu carrito está vacío</h2>
+            <p>Empieza a comprar para añadir artículos a tu carrito.</p>
             <Link to="/products" className="continue-shopping-btn">
-              Start Shopping
+              Comenzar a Comprar
             </Link>
           </div>
         ) : (
@@ -48,7 +48,7 @@ export default function CartPage() {
                   <button
                     className="remove-btn"
                     onClick={() => removeFromCart(item.id)}
-                    title="Remove from cart"
+                    title="Eliminar del carrito"
                   >
                     ✕
                   </button>
@@ -58,31 +58,31 @@ export default function CartPage() {
 
             {/* Cart Summary */}
             <aside className="cart-summary">
-              <h2>Order Summary</h2>
+              <h2>Resumen de Pedido</h2>
               <div className="summary-row">
                 <span>Subtotal:</span>
                 <span>${cartTotal.toFixed(2)}</span>
               </div>
               <div className="summary-row">
-                <span>Shipping:</span>
-                <span>{shippingCost === 0 ? 'FREE' : `$${shippingCost.toFixed(2)}`}</span>
+                <span>Envío:</span>
+                <span>{shippingCost === 0 ? 'Gratis' : `$${shippingCost.toFixed(2)}`}</span>
               </div>
               {cartTotal <= 100 && (
                 <p className="shipping-note">
-                  Free shipping on orders over $100!
+                  ¡Envío gratis en pedidos mayores a $100!
                 </p>
               )}
               <div className="summary-row">
-                <span>Tax (8%):</span>
+                <span>Impuestos (8%):</span>
                 <span>${tax.toFixed(2)}</span>
               </div>
               <div className="summary-total">
                 <span>Total:</span>
                 <span>${total.toFixed(2)}</span>
               </div>
-              <button className="checkout-btn">Proceed to Checkout</button>
+              <button className="checkout-btn">Proceder al Pago</button>
               <Link to="/products" className="continue-shopping-btn">
-                Continue Shopping
+                Seguir Comprando
               </Link>
             </aside>
           </div>
@@ -90,7 +90,7 @@ export default function CartPage() {
 
         {cart.length > 0 && (
           <button className="clear-cart-btn" onClick={clearCart}>
-            Clear Cart
+            Vaciar Carrito
           </button>
         )}
       </div>

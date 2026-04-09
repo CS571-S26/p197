@@ -6,10 +6,10 @@ export default function NotFound() {
     <div className="not-found">
       <div className="not-found-content">
         <h1 className="error-code">404</h1>
-        <h2>Page Not Found</h2>
-        <p>The page you're looking for doesn't exist.</p>
+        <h2>Página no encontrada</h2>
+        <p>La página que buscas no existe.</p>
         <Link to="/" className="home-btn">
-          Go Home
+          Ir al inicio
         </Link>
       </div>
     </div>

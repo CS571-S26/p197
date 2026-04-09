@@ -21,19 +21,24 @@ export default function Navbar() {
         <ul className="navbar-menu">
           <li>
             <Link to="/" className="nav-link">
-              Home
+              Inicio
             </Link>
           </li>
           <li>
             <Link to="/products" className="nav-link">
-              Shop
+              Tienda
+            </Link>
+          </li>
+          <li>
+            <Link to="/comunidad" className="nav-link">
+              Por la Comunidad
             </Link>
           </li>
         </ul>
 
         <div className="navbar-actions">
           <Link to="/cart" className="cart-btn">
-            🛍️ Cart
+            🛍️ Carrito
             {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
           </Link>
         </div>

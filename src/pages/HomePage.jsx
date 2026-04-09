@@ -13,17 +13,17 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <h1>Luxury Gifts for Every Moment</h1>
-          <p>Discover our curated collection of jewelry, bags, and perfumes</p>
+          <h1>Regalos de lujo para cada momento</h1>
+          <p>Descubre nuestra selección de joyas, bolsos y perfumes</p>
           <Link to="/products" className="hero-btn">
-            Shop Now
+            Comprar ahora
           </Link>
         </div>
       </section>
 
       {/* Featured Products */}
       <section className="featured">
-        <h2>Featured Products</h2>
+        <h2>Productos Destacados</h2>
         <div className="products-grid">
           {featuredProducts.map((product) => (
             <ProductCard
@@ -39,49 +39,49 @@ export default function HomePage() {
 
       {/* Why Us Section */}
       <section className="why-us">
-        <h2>Why Choose Novedades Angel y Chuy?</h2>
+        <h2>¿Por qué elegir Novedades Angel y Chuy?</h2>
         <div className="benefits-grid">
           <div className="benefit">
             <span className="benefit-icon">✨</span>
-            <h3>Premium Quality</h3>
-            <p>Only the finest materials and craftsmanship</p>
+            <h3>Calidad Premium</h3>
+            <p>Sólo los mejores materiales y acabados elegantes</p>
           </div>
           <div className="benefit">
             <span className="benefit-icon">🚚</span>
-            <h3>Fast Shipping</h3>
-            <p>Free shipping on orders over $100</p>
+            <h3>Envío rápido</h3>
+            <p>Envío gratis en pedidos mayores a $100</p>
           </div>
           <div className="benefit">
             <span className="benefit-icon">🔒</span>
-            <h3>Secure Payment</h3>
-            <p>100% safe and encrypted transactions</p>
+            <h3>Pago seguro</h3>
+            <p>Transacciones 100% seguras y encriptadas</p>
           </div>
           <div className="benefit">
             <span className="benefit-icon">😊</span>
-            <h3>Customer Service</h3>
-            <p>Dedicated support for your satisfaction</p>
+            <h3>Atención al cliente</h3>
+            <p>Soporte dedicado para tu satisfacción</p>
           </div>
         </div>
       </section>
 
       {/* Testimonials */}
       <section className="testimonials">
-        <h2>What Our Customers Say</h2>
+        <h2>Lo que dicen nuestros clientes</h2>
         <div className="testimonials-grid">
           <div className="testimonial">
             <p className="stars">⭐⭐⭐⭐⭐</p>
-            <p>"Amazing quality! The jewelry arrived perfectly packaged. Highly recommend!"</p>
-            <p className="author">- Sarah Johnson</p>
+            <p>"¡Calidad increíble! Las joyas llegaron perfectamente empacadas. ¡Muy recomendable!"</p>
+            <p className="author">- Sara González</p>
           </div>
           <div className="testimonial">
             <p className="stars">⭐⭐⭐⭐⭐</p>
-            <p>"Love my new perfume! The fragrance is exactly as described. Will order again!"</p>
-            <p className="author">- Emma Wilson</p>
+            <p>"¡Me encanta mi nuevo perfume! La fragancia es exactamente como se describe. ¡Volveré a comprar!"</p>
+            <p className="author">- Emma Rodríguez</p>
           </div>
           <div className="testimonial">
             <p className="stars">⭐⭐⭐⭐⭐</p>
-            <p>"The leather bag is absolutely stunning. Best purchase I've made this year."</p>
-            <p className="author">- Michael Chen</p>
+            <p>"El bolso de cuero es absolutamente hermoso. La mejor compra que hice este año."</p>
+            <p className="author">- Miguel Hernández</p>
           </div>
         </div>
       </section>
