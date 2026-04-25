@@ -30,6 +30,11 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
+            <Link to="/about" className="nav-link">
+              Nosotros
+            </Link>
+          </li>
+          <li>
             <Link to="/comunidad" className="nav-link">
               Por la Comunidad
             </Link>

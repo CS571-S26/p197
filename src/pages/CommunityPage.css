@@ -95,3 +95,7 @@
     font-size: 2.25rem;
   }
 }
+.gallery-card img {
+  height: auto !important;
+  max-height: none !important;
+}
